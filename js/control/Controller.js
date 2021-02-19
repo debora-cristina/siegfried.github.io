@@ -821,8 +821,6 @@ Controller.prototype.handleKeydown = function(evt){
 		this.keyRight++;
 		this.rightKeyup = false;
 		if(model.hero.x > 6600 && model.hero.x < 7280 && this.state == this.states.PLAYING){
-			console.log("X:"+ model.hero.x + "Y" + model.hero.y + ""+flag);
-			 console.log("entrou");
 					    if(this.idFase == 1){
 							model.options.monstro = 4;
 							model.monstro.attack = 2* model.monstro.attack;
@@ -878,9 +876,8 @@ Controller.prototype.handleKeydown = function(evt){
             break;
             
         case this.keys.A: // attack
-        	var model = this.model;
-			var hero = model.hero; 
-            hero.attack();
+			var model = this.model;
+			this.model.hero.attack();
             break;
     }
 };
