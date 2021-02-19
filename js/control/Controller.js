@@ -50,7 +50,7 @@ function Controller(canvasId){
 	
 	this.sounds= {
         abrirBau: "sound/abrir_bau.mp3",
-        batalha: "sound/Batalha.mp3",
+        batalha: "sound/batalha.mp3",
 		batalhaBoss: "sound/Batalha_boss.mp3",
 		botao: "sound/botao.mp3",
 		conclusaoFase: "sound/conclusao_fase.mp3",
