@@ -424,10 +424,8 @@ Controller.prototype.handleKeydown = function(evt){
     switch (keycode) {
 		case this.keys.ENTER: // enter
 			if(this.state == this.states.INIT){
-
 				this.gameOver.pause();
 				this.menu.play();
-				
 				myDiv2 = document.getElementById("canvasMenu");
 				myDiv2.style.display = "block";
 				var model = this.model;
@@ -935,50 +933,15 @@ Controller.prototype.batalha = function(){
 };
 
 Controller.prototype.initGame = function(){
-	//this.intro.play();
-	
-	
-	// function slideSwitch() {
-    // var $active = $('#slideshow IMG.active');
-
-    // if ( $active.length == 0 ) $active = $('#slideshow IMG:last');
-
-    // // use this to pull the images in the order they appear in the markup
-    // var $next =  $active.next().length ? $active.next()
-    //     : $('#slideshow IMG:first');
-
-    // // uncomment the 3 lines below to pull the images in random order
-    
-    // // var $sibs  = $active.siblings();
-    // // var rndNum = Math.floor(Math.random() * $sibs.length );
-    // // var $next  = $( $sibs[ rndNum ] );
-
-
-    // $active.addClass('last-active');
-
-    // $next.css({opacity: 0.0})
-    //     .addClass('active')
-    //     .animate({opacity: 1.0}, 2000, function() {
-    //         $active.removeClass('active last-active');
-    //     });
-	// }
-	
-	// setInterval( slideSwitch, 2000 );
-	// myDiv1 = document.getElementById("slideshow");
-
-	if(this.state == this.states.INIT){
-				
-		this.gameOver.pause();
-		this.menu.play();
-		
-		myDiv2 = document.getElementById("canvasMenu");
-		myDiv2.style.display = "block";
-		var model = this.model;
-		model.initHero();
-		this.view.drawMenu();
-		this.state = this.states.MENU;
-	}
+	this.gameOver.pause();
+	this.menu.play();
 	myDiv2 = document.getElementById("canvasMenu");
+	myDiv2.style.display = "block";
+	var model = this.model;
+	model.initHero();
+	this.view.drawMenu();
+	this.state = this.states.MENU;
+	//myDiv2 = document.getElementById("canvasMenu");
 	//myDiv1.style.display = "block";
 	document.getElementById("canvasMenu").style.display="none";
 	
