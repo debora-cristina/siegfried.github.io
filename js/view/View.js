@@ -579,7 +579,6 @@ View.prototype.desenharCreditos = function(){
 	creditos('Rafael C.C. Mateus',70,190,"25px  Georgia",'gray');	
 	creditos('Programação',100,250,"25px bold Georgia",'orange');
 	creditos('Débora C. Ferreira',70,300,"25px bold Georgia",'orange');
-	creditos('Vinnícius H.M. Soares',50,340,"25px bold Georgia",'orange');	
 	creditos('Designer',120,400,"25px bold Georgia",'orange');
 	creditos('Rafael C.C. Mateus',70,440,"25px bold Georgia",'orange');	
 	creditos('Animação',120,500,"25px bold Georgia",'orange');
