@@ -294,7 +294,6 @@ Controller.prototype.handleOnMouseDown = function(evt){
 		  document.documentElement.scrollTop;
 	}
 	
-	//console.log("X:" + x + "Y" + y);
 	//model.puzzle.onPuzzleClick(evt);
 	
 	if(this.state == this.states.MENU){
