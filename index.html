@@ -1,0 +1,95 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta charset="utf-8" />
+
+<title>Intro</title>
+
+<script type="text/javascript" src="jquery/jquery-1.2.6.min.js"></script>
+<script src="js/classes/Actor.js"></script>
+<script src="js/classes/Monstro.js"></script>
+<script src="js/classes/MagicBar.js"></script>
+<script src="js/util/animation.js"></script>
+<script src="js/control/Controller.js"></script>
+<script src="js/classes/Puzzle.js"></script>
+<script src="js/classes/Skill.js"></script>
+<script src="js/classes/Siegfried.js"></script>
+<script src="js/classes/Item.js"></script>
+<script src="js/model/Model.js"></script>
+<script src="js/view/View.js"></script>
+<script src="js/classes/Level.js"></script>
+<script src="js/classes/HealthBar.js"></script>
+<script src="js/classes/Options.js"></script>
+<script src="js/util/AudioManager.js"></script>       
+
+<script type="text/javascript">
+
+  window.onload = function(){
+                new Controller("canvasMenu");
+  };
+  
+  
+	
+
+</script>
+
+<style>
+        body
+        {
+            margin:0;
+            overflow:hidden;
+        }
+		
+		/*** set the width and height to match your images **/
+
+		#slideshow {
+			position:relative;
+			height:350px;
+		}
+
+		#slideshow IMG {
+			position:absolute;
+			top:0;
+			left:0;
+			z-index:8;
+			opacity:0.0;
+		}
+
+		#slideshow IMG.active {
+			z-index:10;
+			opacity:1.0;
+		}
+
+		#slideshow IMG.last-active {
+			z-index:9;
+		}
+
+		body
+				{
+					margin:0;
+					overflow:hidden;
+				}
+</style>
+
+
+</head>
+
+<body>
+
+<!-- this will work with any number of images -->
+<!-- set the active class on whichever image you want to show up as the default 
+(otherwise this will be the last image) -->
+
+<div id="slideshow" width="900" height="600">
+    <img width="900" height="600" src="img/0.jpg" alt="Slideshow Image 1" />
+    <img width="900" height="600" src="img/1.png" alt="Slideshow Image 2" />
+    <img width="900" height="600" src="img/3.jpg" alt="Slideshow Image 3" />
+    <img width="900" height="600" src="img/4.jpg" alt="Slideshow Image 4" />
+    <img width="900" height="600" src="img/5.jpg" alt="Slideshow Image 5" />
+    <img width="900" height="600" src="img/6.jpg" alt="Slideshow Image 6" />
+</div>
+
+<canvas id="canvasMenu" width="900" height="600" ></canvas>
+
+</body>
+</html>
