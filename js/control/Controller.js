@@ -938,7 +938,7 @@ Controller.prototype.batalha = function(){
 };
 
 Controller.prototype.initGame = function(){
-	this.intro.play();
+	//this.intro.play();
 	
 	
 	// function slideSwitch() {
