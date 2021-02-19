@@ -424,12 +424,10 @@ Controller.prototype.handleKeydown = function(evt){
     switch (keycode) {
 		case this.keys.ENTER: // enter
 			if(this.state == this.states.INIT){
-				this.intro.pause();
+
 				this.gameOver.pause();
 				this.menu.play();
 				
-				document.getElementById("slideshow").style.display="none";
-				myDiv1 = document.getElementById("slideshow");
 				myDiv2 = document.getElementById("canvasMenu");
 				myDiv2.style.display = "block";
 				var model = this.model;
@@ -967,6 +965,19 @@ Controller.prototype.initGame = function(){
 	
 	// setInterval( slideSwitch, 2000 );
 	// myDiv1 = document.getElementById("slideshow");
+
+	if(this.state == this.states.INIT){
+				
+		this.gameOver.pause();
+		this.menu.play();
+		
+		myDiv2 = document.getElementById("canvasMenu");
+		myDiv2.style.display = "block";
+		var model = this.model;
+		model.initHero();
+		this.view.drawMenu();
+		this.state = this.states.MENU;
+	}
 	myDiv2 = document.getElementById("canvasMenu");
 	//myDiv1.style.display = "block";
 	document.getElementById("canvasMenu").style.display="none";
