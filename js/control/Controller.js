@@ -938,7 +938,7 @@ Controller.prototype.batalha = function(){
 };
 
 Controller.prototype.initGame = function(){
-	//this.intro.play();
+	this.intro.play();
 	
 	
 	// function slideSwitch() {
@@ -969,10 +969,9 @@ Controller.prototype.initGame = function(){
 	// setInterval( slideSwitch, 2000 );
 	// myDiv1 = document.getElementById("slideshow");
 	myDiv2 = document.getElementById("canvasMenu");
-	myDiv1.style.display = "block";
+	//myDiv1.style.display = "block";
 	document.getElementById("canvasMenu").style.display="none";
 	
-
 	
     
 
